@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VN-Sound</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Logo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .blockParrent {
+            display: flex;
+            flex-flow: row;
+            height: 500px;
+            width: 500px;
+            margin: auto;
+        }
+
+        .box1 {
+            background-color: green;
+            color: #fff;
+            width: 30px;
+        }
+
+        .box2 {
+            background-color: #DDDDDD;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-web">
+        <label for="bg-blur" class="bg-blur"></label>
+        <input id="bg-blur" type="checkbox" hidden>
+
+        <div class="sideBar">
+            <!-- Side ID -->
+            <div class="site-ID">
+                <div class="logo-btn" href="#">
+                    <div class="logo">
+                        <i class="logo-img fa-solid fa-record-vinyl"></i>
+                        <div class="logo-slider"></div>
+                        <h1 class="logo-name"><span>V</span><span>N</span>-Sound</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side redirect -->
+            <div class="navBar-menu">
+                <ul class="navBar">
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-coins"></i>
+                            Khám Phá</a>
+                    </li>
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            #Vnchart</a>
+                    </li>
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-radio"></i>
+                            Radio</a>
+                    </li>
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-photo-film"></i>
+                            Thư viện</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="siderBar-icon">
+            <!-- Side redirect -->
+            <div class="navBar-menu">
+                <ul class="navBar">
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-coins"></i>
+                        </a>
+                    </li>
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-chart-simple"></i>
+                        </a>
+                    </li>
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-radio"></i>
+                        </a>
+                    </li>
+                    <li class="nav">
+
+                        <a href="#">
+                            <i class="fa-solid fa-photo-film"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <label for="bg-blur">
+                <i class="fa-solid fa-right-left"></i>
+            </label>
+        </div>
+
+        <div class="content">
+            <div class="content-header">
+
+                <div class="content-header__toolBar toolBar-left">
+                    <div class="redirect-btn">
+                        <button><i class="fa-solid fa-angle-left"></i></button>
+                        <button><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+
+                    <div class="search-block">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát....">
+                    </div>
+                </div>
+
+                <div class="download-block">
+                    <button>
+                        <i class="fa-solid fa-download"></i>
+                        Get app
+                    </button>
+                </div>
+
+                <div class="content-header__toolBar  toolBar-right">
+
+                    <div class="setting-block">
+                        <button>
+                            <i class="fa-solid fa-gear"></i>
+                        </button>
+                    </div>
+
+                    <div class="user-block">
+                        <div class="user-img"></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="content-container">
+                <div class="slider row">
+
+                    <button class=""><i class="fa-solid fa-angle-left"></i></button>
+                    <button><i class="fa-solid fa-angle-right"></i></button>
+
+
+                    <!-- <a href="#" class=" poster col xl-4 l-6 m-12">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/e/1/b/c/e1bc5206d8d56365a7278ea73d8893f9.jpg"
+                            alt="">
+                    </a>
+
+                    <a href="#" class="poster col xl-4 l-6 m-0">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/c/4/b/0/c4b0246e3615e373ca1847a962fec2d9.jpg"
+                            alt="">
+                    </a>
+                    <a href="#" class="poster col xl-4 l-0 m-0">
+                        <img src="https://photo-zmp3.zmdcdn.me/banner/f/d/f/0/fdf047080affa60db3e038b53b95563d.jpg"
+                            alt="">
+                    </a> -->
+
+                </div>
+
+                <div class="block new-publish">
+                    <div class="block-title">Mới Phát Hành</div>
+                    <div class="block-btn">
+                        <div class="filter">
+                            <button class="active">TẤT CẢ</button>
+                            <button>VIỆT NAM</button>
+                            <button>QUỐC TẾ</button>
+                        </div>
+                        <a class="getAll">
+                            Tất cả
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
+                    <div class="block-media row">
+                        <!-- <div class="col xl-4 l-6 m-12">
+                            <div class="card-music">
+                                <div class="card-music__img"></div>
+                                <div class="card-music__inf">
+                                    <a class="inf-title">Úm Ba La</a>
+                                    <a class="inf-artist">Yuno Bigboi</a>
+                                    <div class="inf-desc">Hôm qua</div>
+                                </div>
+                                <div class="card-music__emotion">
+                                    <button onclick="emoji_love(this)"><i class="fa-solid fa-heart"></i></button>
+                                </div>
+                            </div>
+                            <audio
+                                src="https://drive.google.com/uc?export=download&id=1nDAbCBeafq3oxrcNC04hPTQ3fDLFYUvt"></audio>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="album">
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Chill</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="block-media row">
+                            <div class="col no-flex xl-3 l-4 m-6 s-12 ss-6 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col no-flex xl-3 l-4 m-6 s-0 ss-6 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col no-flex xl-3 l-4 m-0 s-0 ss-0 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col no-flex xl-3 l-0 s-0 ss-0 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Một Chút Yêu Đời</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="block-media row">
+                            <div class="col no-flex  xl-3 l-4 m-6 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col no-flex  xl-3 l-0 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="block">
+                        <div class="block-btn">
+                            <div class="block-title">Tâm Trạng Tan Chậm</div>
+                            <a class="getAll">
+                                Tất cả
+                                <i class="fa-solid fa-angle-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="block-media row">
+                            <div class="col no-flex  xl-3 l-4 m-6 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col no-flex  xl-3 l-4 m-6 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col no-flex  xl-3 l-0 padding-10">
+                                <div class="card-album">
+                                    <div class="card-album__img"></div>
+                                    <div class="card-album__inf">
+                                        <!-- <a class="inf-title">Úm Ba La</a>
+                                        <a class="inf-artist">Yuno Bigboi</a> -->
+                                        <div class="inf-desc">Nhạc Việt "lâu phai" và gây nghiện hoài hoài</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="footer">
+                        Chưa code xong :D
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="player-block">
+            <!-- <div class="card-music">
+                <div class="card-music__img"></div>
+                <div class="card-music__inf">
+                    <a class="inf-title">Vroom Vroom</a>
+                    <a class="inf-artist">TEMPEST</a>
+                    
+                </div>
+                <div class="card-music__emotion">
+                    <button onclick="emoji_love(this)"><i class="fa-regular fa-heart"></i></button>
+                </div>
+            </div>
+
+            <div class="player-control">
+                <div class="btn">
+                    <div class="action">
+                        <button class="backward"><i class="fa-solid fa-backward"></i></button>
+                        <button class="play"><i class="fa-solid fa-play"></i></button>
+                        <button class="forward"><i class="fa-solid fa-forward"></i></button>
+                    </div>
+                </div>
+                <div class="slider-thumb">
+                    <p class="time-start">00:00</p>
+                    <input type="range">
+                    <p class="time-end">03:34</p>
+                </div>
+
+            </div>
+
+            <div class="icon">
+                <button><i class="fa-solid fa-volume-high"></i></button>
+            </div>
+
+            <audio src="https://drive.google.com/uc?export=download&id=1patMEkEG6YHhABmoi5v2vGgaJUea7aTX"></audio> -->
+
+        </div>
+
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script>
+
+    </script>
+
+    <script>
+
+        app = app([
+            {
+                url: './database/newsfeed.json',
+                type: 'newsfeed',
+                field: '.slider'
+            },
+            {
+                url: './database/New_music.json',
+                type: 'new music',
+                field: '.block-media'
+            }
+        ])
+
+        $ = document.querySelector.bind(document)
+        $$ = document.querySelectorAll.bind(document)
+
+        $('#bg-blur').onchange = (e) => {
+
+            $('.sideBar').classList.toggle('active')
+            $('.bg-blur').classList.toggle('active')
+        }
+
+       
+
+    
+
+
+
+        function emoji_love(e) {
+            icon = e.querySelector('i')
+            icon.classList.toggle("fa-regular")
+            icon.classList.toggle("fa-solid")
+        }
+
+    </script>
+</body>
+
+</html>
