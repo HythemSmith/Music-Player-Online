@@ -1,7 +1,11 @@
+const path = require('path');
+
+
+
 class SiteController {
     //localhost:3000/
     index(req, res) {
-     res.send("hahaha")
+        res.sendFile('D:\\Desktop\\Web\\src\\pages\\index.html')
     }
 }
 
